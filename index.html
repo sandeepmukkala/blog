@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Personal Projects &amp; Ideas</title>
+    <meta name="description" content="A personal blog about building AI tools that solve real-world problems, side projects, and ideas worth exploring.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+    <script data-goatcounter="https://sandeepblog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-icon">✍️</span>
+                <span class="nav__logo-text">Personal Blog</span>
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="https://linkedin.com/in/rajasm07141988" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero__bg"></div>
+        <div class="blog-hero__content">
+            <span class="section-label">Personal Blog</span>
+            <h1>A personal journal on building <span class="gradient-text">things that matter</span></h1>
+            <p>one project at a time.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <article class="blog-post">
+            <header class="blog-post__header">
+                <div class="blog-post__meta">
+                    <span class="blog-post__date">February 23, 2026</span>
+                    <span class="blog-post__tag">Personal</span>
+                    <span class="blog-post__tag">Projects</span>
+                    <span class="blog-post__tag">AI</span>
+                </div>
+                <h1 class="blog-post__title">My Journey Building AI Tools That Actually Matter</h1>
+                <p class="blog-post__excerpt">
+                    Most side projects die in a weekend. Mine turned into a mission. Here's the story of how personal frustration led me to build two AI-powered tools — and the lessons I learned along the way.
+                </p>
+                <div class="blog-post__author">
+                    <div class="blog-post__author-avatar">PB</div>
+                    <div class="blog-post__author-info">
+                        <span class="blog-post__author-name">Personal Blog</span>
+                        <span class="blog-post__author-role">Projects &amp; Ideas</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="blog-post__body">
+                <div class="glass-section">
+                    <p>
+                        I've always been the kind of person who builds things to scratch my own itch. If something frustrates me enough, I'll eventually open a code editor and try to fix it. That instinct is how these projects were born — not as a grand plan, but as a series of personal projects that grew into something bigger than I expected.
+                    </p>
+                    <p>
+                        This post is about that journey: the problems I kept running into, the tools I built to solve them, and the ideas I'm chasing next.
+                    </p>
+                </div>
+
+                <div class="glass-section">
+                    <h2>The Frustration That Started It All</h2>
+                    <p>
+                        Over seven years in enterprise engineering, I sat through thousands of meetings. Important decisions were made, action items were assigned, insights were shared — and then most of it vanished. Note-takers were too busy writing to participate. Zoom transcription didn't work for in-person meetings. And for multilingual teams, there was simply no tool that could transcribe a meeting in one language and summarize it in another.
+                    </p>
+                    <p>
+                        I looked at what existed — and everything fell short in some way. Most tools required bots to join your calls (uncomfortable for many people). Others were English-only. Some were absurdly expensive. And none of them handled the simple case of "I'm sitting in an in-person meeting with my phone in my pocket."
+                    </p>
+                    <p>
+                        So I did what any frustrated engineer would do: I built my own.
+                    </p>
+                </div>
+
+                <div class="glass-section glass-section--transcriptly">
+                    <h2>Project #1: Transcriptly</h2>
+                    <div class="blog-post__product">
+                        <div class="blog-post__mockup blog-post__mockup--glass">
+                            <img src="assets/transcriptly-screen.svg" alt="Transcriptly app screenshot" class="product__screen-img">
+                        </div>
+                        <div class="blog-post__product-text">
+                            <p>
+                                <strong>Transcriptly</strong> is a meeting transcription app I built from scratch — iOS, Android, and Web from a single codebase. The idea is dead simple: open the app, select a language, tap record, and put your phone down. It keeps recording even when your phone locks.
+                            </p>
+                            <p>
+                                When the meeting ends, AI transcribes the audio, generates a structured summary with key points and action items, and — here's the part I'm most proud of — if the meeting was in a non-English language, it automatically provides both the original transcription AND an English translation. Dual output, zero extra steps.
+                            </p>
+                            <p>
+                                It supports 14 languages today: English, Spanish, French, German, Portuguese, Japanese, Russian, Hindi, Tamil, Chinese, Arabic, Bengali, Kannada, and Telugu. You can also record offline and transcribe later when you have connectivity.
+                            </p>
+                            <p>
+                                Building this taught me a lot about audio processing on mobile, cross-platform development, and the nuances of multilingual AI. It also taught me that the best product decisions come from being your own user.
+                            </p>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>The best tools don't ask you to change your workflow. They fit into the way you already work.</p>
+                    </blockquote>
+                </div>
+
+                <div class="glass-section glass-section--translatory">
+                    <h2>Project #2: Translatory</h2>
+                    <div class="blog-post__product blog-post__product--reverse">
+                        <div class="blog-post__mockup blog-post__mockup--glass blog-post__mockup--translatory">
+                            <img src="assets/translatory-screen.svg" alt="Translatory app screenshot" class="product__screen-img">
+                        </div>
+                        <div class="blog-post__product-text">
+                            <p>
+                                While building Transcriptly, I stumbled into an adjacent problem that was even more neglected: <strong>document translation</strong>.
+                            </p>
+                            <p>
+                                Not the "paste text into a translation box" kind. I'm talking about real documents — contracts with watermarks, forms with handwritten fill-ins, invoices with company logos and borders, government documents with official stamps and signatures. When you translate these through existing tools, you get a wall of plain text. The layout is gone. The signatures are gone. The watermarks are gone. The document is fundamentally broken.
+                            </p>
+                            <p>
+                                So I built <strong>Translatory</strong> — a format-preserving document translation tool. Upload an image, PDF, DOCX, or PPTX, and get back a fully translated document that looks like it was originally written in the target language. Watermarks, borders, logos, signatures — everything stays intact. 50+ languages supported.
+                            </p>
+                            <p>
+                                This project pushed me deep into some of the hardest unsolved problems in document processing. It's the kind of unsexy engineering challenge that nobody talks about at conferences — but millions of people deal with every day.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-section">
+                    <h2>What I Learned Building These Projects</h2>
+                    <p>
+                        A few things became clear to me after building both Transcriptly and Translatory:
+                    </p>
+                    <ol>
+                        <li><strong>Start with the problem, not the technology.</strong> I didn't set out to "use AI." I set out to fix something that annoyed me. The technology was just the tool I reached for.</li>
+                        <li><strong>Multilingual support isn't a feature — it's a responsibility.</strong> 75% of the world doesn't speak English. Building English-only tools means ignoring most of humanity.</li>
+                        <li><strong>Privacy matters more than convenience.</strong> People are uncomfortable with bots in their meetings and their documents being sent to unknown servers. Privacy-first architecture isn't just ethical — it's a competitive advantage.</li>
+                        <li><strong>Invest heavily in automated testing.</strong> When you're the only developer, a robust test suite is your safety net. It lets you move fast without breaking things.</li>
+                    </ol>
+                </div>
+
+                <div class="glass-section glass-section--accent">
+                    <h2>What's Next: AI for Agriculture</h2>
+                    <p>
+                        Language barriers affect productivity. Food insecurity affects survival. The same AI capabilities I've built for language — computer vision, multilingual interfaces, mobile-first apps — are exactly what's needed on the farm.
+                    </p>
+                    <p>
+                        With over 500 million smallholder farms worldwide feeding 80% of the global population, even small improvements in yield and efficiency can transform lives. I'm building AI tools that are accessible, affordable, and designed for the fields — not just the boardroom. This project is currently <strong>in progress</strong>. More details coming soon.
+                    </p>
+                </div>
+
+                <div class="glass-section">
+                    <h2>My Philosophy: Code with a Cause</h2>
+                    <p>
+                        "Code with a cause" is a personal rule I follow. Every project I take on has to pass a simple test: <strong>does this solve a real problem for real people?</strong>
+                    </p>
+                    <p>
+                        I'm not interested in building the next chatbot wrapper or AI art generator. There are enough of those. I'm interested in the boring, hard, unglamorous problems — the ones that affect billions of people but don't make for viral demos.
+                    </p>
+                </div>
+
+                <div class="glass-section">
+                    <h2>Final Thoughts</h2>
+                    <p>
+                        We're at an incredible inflection point. AI costs have collapsed. Open-source models now rival proprietary ones. Cross-platform frameworks have matured to the point where a solo engineer can build for iOS, Android, and Web from a single codebase.
+                    </p>
+                    <p>
+                        For the first time, one person with a laptop can build tools that genuinely compete with well-funded teams. The barriers have never been lower. The only question is: <strong>what will you build?</strong>
+                    </p>
+                    <p>
+                        I choose to build tools that matter. Tools that help a consultant in Tokyo document her meeting in Japanese and share it in English. Tools that help a government clerk translate a legal document while preserving every signature and watermark. And this is just the beginning.
+                    </p>
+                    <p>
+                        That's what this blog will be about — the projects I'm building, the ideas I'm exploring, the problems I'm trying to solve, and the lessons I learn along the way.
+                    </p>
+                    <p>
+                        I'm just getting started.
+                    </p>
+                </div>
+
+                <div class="glass-section glass-section--cta">
+                    <p>
+                        <em>If any of this resonates with you, I'd love to connect on <a href="https://linkedin.com/in/rajasm07141988" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary-light)">LinkedIn</a>. I'd love to hear what you're building too.</em>
+                    </p>
+                </div>
+            </div>
+
+            <footer class="blog-post__footer">
+                <p>Thanks for reading.</p>
+            </footer>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="nav__logo-icon">✍️</span>
+                        <span>Personal Blog</span>
+                    </a>
+                    <p class="footer__tagline">Code with a cause</p>
+                    <p class="footer__description">Building AI-powered tools that solve real-world problems.</p>
+                </div>
+                <div class="footer__links-group">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/in/rajasm07141988" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Personal Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
