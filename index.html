@@ -53,7 +53,7 @@
                 </div>
                 <h1 class="blog-post__title">My Journey Building AI Tools That Actually Matter</h1>
                 <p class="blog-post__excerpt">
-                    Most side projects die in a weekend. Mine turned into a mission. Here's the story of how personal frustration led me to build two AI-powered tools — and the lessons I learned along the way.
+                    Most side projects die in a weekend. Mine turned into a mission. Here's the story of how personal frustration led me to build AI-powered tools — and the lessons I learned along the way.
                 </p>
                 <div class="blog-post__author">
                     <div class="blog-post__author-avatar">PB</div>
@@ -77,34 +77,31 @@
                 <div class="glass-section">
                     <h2>The Frustration That Started It All</h2>
                     <p>
-                        Over seven years in enterprise engineering, I sat through thousands of meetings. Important decisions were made, action items were assigned, insights were shared — and then most of it vanished. Note-takers were too busy writing to participate. Zoom transcription didn't work for in-person meetings. And for multilingual teams, there was simply no tool that could transcribe a meeting in one language and summarize it in another.
+                        Over seven years in enterprise engineering, I sat through thousands of meetings. Important decisions were made, action items were assigned, insights were shared — and then most of it vanished. Note-takers were too busy writing to participate. Existing transcription tools didn't work well for in-person meetings. And for multilingual teams, the options were almost non-existent.
                     </p>
                     <p>
-                        I looked at what existed — and everything fell short in some way. Most tools required bots to join your calls (uncomfortable for many people). Others were English-only. Some were absurdly expensive. And none of them handled the simple case of "I'm sitting in an in-person meeting with my phone in my pocket."
+                        I looked at what existed — and everything fell short in some way. Most tools had significant limitations that made them impractical for real-world use. The gaps were obvious once you noticed them.
                     </p>
                     <p>
-                        So I did what any frustrated engineer would do: I built my own.
+                        So I did what any frustrated engineer would do: I started building.
                     </p>
                 </div>
 
                 <div class="glass-section glass-section--transcriptly">
-                    <h2>Project #1: Transcriptly</h2>
+                    <h2>Project #1: AI-Powered Meeting Transcription</h2>
                     <div class="blog-post__product">
                         <div class="blog-post__mockup blog-post__mockup--glass">
-                            <img src="assets/transcriptly-screen.svg" alt="Transcriptly app screenshot" class="product__screen-img">
+                            <img src="assets/transcriptly-screen.svg" alt="Meeting transcription app concept" class="product__screen-img">
                         </div>
                         <div class="blog-post__product-text">
                             <p>
-                                <strong>Transcriptly</strong> is a meeting transcription app I built from scratch — iOS, Android, and Web from a single codebase. The idea is dead simple: open the app, select a language, tap record, and put your phone down. It keeps recording even when your phone locks.
+                                The first tool I built tackles a problem every knowledge worker knows: capturing what happens in meetings. I wanted something that just worked — across platforms, across languages, without changing how people already meet.
                             </p>
                             <p>
-                                When the meeting ends, AI transcribes the audio, generates a structured summary with key points and action items, and — here's the part I'm most proud of — if the meeting was in a non-English language, it automatically provides both the original transcription AND an English translation. Dual output, zero extra steps.
+                                I designed it from the ground up to handle multilingual scenarios that existing tools ignore entirely. The AI doesn't just transcribe — it understands context, generates structured outputs, and bridges language barriers automatically.
                             </p>
                             <p>
-                                It supports 14 languages today: English, Spanish, French, German, Portuguese, Japanese, Russian, Hindi, Tamil, Chinese, Arabic, Bengali, Kannada, and Telugu. You can also record offline and transcribe later when you have connectivity.
-                            </p>
-                            <p>
-                                Building this taught me a lot about audio processing on mobile, cross-platform development, and the nuances of multilingual AI. It also taught me that the best product decisions come from being your own user.
+                                Building this taught me a lot about audio processing, cross-platform development, and the nuances of multilingual AI. It also taught me that the best product decisions come from being your own user.
                             </p>
                         </div>
                     </div>
@@ -114,23 +111,20 @@
                 </div>
 
                 <div class="glass-section glass-section--translatory">
-                    <h2>Project #2: Translatory</h2>
+                    <h2>Project #2: AI-Powered Document Translation</h2>
                     <div class="blog-post__product blog-post__product--reverse">
                         <div class="blog-post__mockup blog-post__mockup--glass blog-post__mockup--translatory">
-                            <img src="assets/translatory-screen.svg" alt="Translatory app screenshot" class="product__screen-img">
+                            <img src="assets/translatory-screen.svg" alt="Document translation app concept" class="product__screen-img">
                         </div>
                         <div class="blog-post__product-text">
                             <p>
-                                While building Transcriptly, I stumbled into an adjacent problem that was even more neglected: <strong>document translation</strong>.
+                                While working on the first project, I stumbled into an adjacent problem that was even more neglected: <strong>document translation</strong>.
                             </p>
                             <p>
-                                Not the "paste text into a translation box" kind. I'm talking about real documents — contracts with watermarks, forms with handwritten fill-ins, invoices with company logos and borders, government documents with official stamps and signatures. When you translate these through existing tools, you get a wall of plain text. The layout is gone. The signatures are gone. The watermarks are gone. The document is fundamentally broken.
+                                Not the "paste text into a box" kind. I'm talking about real documents — the kind with complex layouts, visual elements, and formatting that matters. When you translate these through existing tools, you lose everything that makes the document a document. The output is unusable.
                             </p>
                             <p>
-                                So I built <strong>Translatory</strong> — a format-preserving document translation tool. Upload an image, PDF, DOCX, or PPTX, and get back a fully translated document that looks like it was originally written in the target language. Watermarks, borders, logos, signatures — everything stays intact. 50+ languages supported.
-                            </p>
-                            <p>
-                                This project pushed me deep into some of the hardest unsolved problems in document processing. It's the kind of unsexy engineering challenge that nobody talks about at conferences — but millions of people deal with every day.
+                                So I built a tool that solves this problem in a way that existing solutions simply don't. The engineering challenges were some of the hardest I've faced — the kind of problems that nobody talks about at conferences, but millions of people deal with every day.
                             </p>
                         </div>
                     </div>
@@ -139,23 +133,23 @@
                 <div class="glass-section">
                     <h2>What I Learned Building These Projects</h2>
                     <p>
-                        A few things became clear to me after building both Transcriptly and Translatory:
+                        A few things became clear to me after building both tools:
                     </p>
                     <ol>
                         <li><strong>Start with the problem, not the technology.</strong> I didn't set out to "use AI." I set out to fix something that annoyed me. The technology was just the tool I reached for.</li>
                         <li><strong>Multilingual support isn't a feature — it's a responsibility.</strong> 75% of the world doesn't speak English. Building English-only tools means ignoring most of humanity.</li>
-                        <li><strong>Privacy matters more than convenience.</strong> People are uncomfortable with bots in their meetings and their documents being sent to unknown servers. Privacy-first architecture isn't just ethical — it's a competitive advantage.</li>
+                        <li><strong>Privacy matters.</strong> People care deeply about where their data goes. Respecting that isn't optional — it's foundational.</li>
                         <li><strong>Invest heavily in automated testing.</strong> When you're the only developer, a robust test suite is your safety net. It lets you move fast without breaking things.</li>
                     </ol>
                 </div>
 
                 <div class="glass-section glass-section--accent">
-                    <h2>What's Next: AI for Agriculture</h2>
+                    <h2>What's Next</h2>
                     <p>
-                        Language barriers affect productivity. Food insecurity affects survival. The same AI capabilities I've built for language — computer vision, multilingual interfaces, mobile-first apps — are exactly what's needed on the farm.
+                        I'm exploring how the same AI capabilities I've built for language — computer vision, multilingual interfaces, mobile-first design — can be applied to other domains where technology is lagging behind.
                     </p>
                     <p>
-                        With over 500 million smallholder farms worldwide feeding 80% of the global population, even small improvements in yield and efficiency can transform lives. I'm building AI tools that are accessible, affordable, and designed for the fields — not just the boardroom. This project is currently <strong>in progress</strong>. More details coming soon.
+                        There are entire industries where the tools haven't caught up to the needs. I'm working on identifying the right problems and building solutions that are accessible and affordable for the people who need them most. More details coming soon.
                     </p>
                 </div>
 
@@ -172,13 +166,13 @@
                 <div class="glass-section">
                     <h2>Final Thoughts</h2>
                     <p>
-                        We're at an incredible inflection point. AI costs have collapsed. Open-source models now rival proprietary ones. Cross-platform frameworks have matured to the point where a solo engineer can build for iOS, Android, and Web from a single codebase.
+                        We're at an incredible inflection point. AI costs have collapsed. Open-source models now rival proprietary ones. Cross-platform frameworks have matured to the point where a solo engineer can build for multiple platforms from a single codebase.
                     </p>
                     <p>
                         For the first time, one person with a laptop can build tools that genuinely compete with well-funded teams. The barriers have never been lower. The only question is: <strong>what will you build?</strong>
                     </p>
                     <p>
-                        I choose to build tools that matter. Tools that help a consultant in Tokyo document her meeting in Japanese and share it in English. Tools that help a government clerk translate a legal document while preserving every signature and watermark. And this is just the beginning.
+                        I choose to build tools that matter. Tools that break language barriers and make information accessible to everyone, regardless of what language they speak.
                     </p>
                     <p>
                         That's what this blog will be about — the projects I'm building, the ideas I'm exploring, the problems I'm trying to solve, and the lessons I learn along the way.
