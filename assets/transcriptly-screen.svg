@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 740" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#007AFF"/>
+      <stop offset="100%" stop-color="#0066DD"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-2%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="btnShadow" x="-4%" y="-4%" width="108%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#007AFF" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="390" height="740" rx="0" fill="url(#bg)"/>
+
+  <!-- Status Bar -->
+  <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1a1a1a">9:41</text>
+  <text x="340" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#1a1a1a">100%</text>
+  <!-- Battery icon -->
+  <rect x="358" y="19" width="20" height="10" rx="2" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="378" y="22" width="2" height="4" rx="1" fill="#1a1a1a"/>
+  <rect x="360" y="21" width="16" height="6" rx="1" fill="#1a1a1a"/>
+
+  <!-- Header -->
+  <text x="24" y="76" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#1a1a1a">Hello, User</text>
+  <text x="24" y="98" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#666">Ready to capture your meeting?</text>
+
+  <!-- Logout button -->
+  <circle cx="354" cy="76" r="20" fill="#fff"/>
+  <text x="354" y="81" font-family="system-ui, sans-serif" font-size="18" fill="#666" text-anchor="middle">&#x2192;</text>
+
+  <!-- Main Card -->
+  <rect x="16" y="126" width="358" height="448" rx="24" fill="#fff" filter="url(#cardShadow)"/>
+
+  <!-- Card Title -->
+  <text x="40" y="162" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">New Recording</text>
+
+  <!-- Recording Title Label -->
+  <text x="40" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#666" letter-spacing="0.5">RECORDING TITLE</text>
+
+  <!-- Title Input -->
+  <rect x="40" y="210" width="318" height="48" rx="16" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <text x="68" y="239" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#999">Enter title...</text>
+  <!-- Document icon -->
+  <rect x="52" y="226" width="10" height="13" rx="1.5" fill="none" stroke="#666" stroke-width="1.2"/>
+  <line x1="54" y1="231" x2="60" y2="231" stroke="#666" stroke-width="0.8"/>
+  <line x1="54" y1="234" x2="58" y2="234" stroke="#666" stroke-width="0.8"/>
+
+  <!-- Language Label -->
+  <text x="40" y="288" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#666" letter-spacing="0.5">TRANSCRIPTION LANGUAGE</text>
+
+  <!-- Language Selector -->
+  <rect x="40" y="298" width="318" height="48" rx="16" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1"/>
+  <!-- Globe icon -->
+  <circle cx="58" cy="322" r="8" fill="none" stroke="#666" stroke-width="1.2"/>
+  <line x1="50" y1="322" x2="66" y2="322" stroke="#666" stroke-width="0.6"/>
+  <line x1="58" y1="314" x2="58" y2="330" stroke="#666" stroke-width="0.6"/>
+  <text x="74" y="327" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#1a1a1a">English (English)</text>
+  <!-- Accuracy badge -->
+  <rect x="280" y="312" width="46" height="20" rx="8" fill="#e8f5e9"/>
+  <text x="303" y="326" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#2e7d32" text-anchor="middle">98%</text>
+  <!-- Chevron -->
+  <text x="338" y="327" font-family="system-ui, sans-serif" font-size="16" fill="#666">&#x25BE;</text>
+
+  <!-- Timer -->
+  <text x="195" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="#1a1a1a" text-anchor="middle" letter-spacing="2">0:00</text>
+
+  <!-- Start Recording Button -->
+  <rect x="40" y="424" width="318" height="52" rx="16" fill="url(#btnGrad)" filter="url(#btnShadow)"/>
+  <!-- Mic icon circle -->
+  <circle cx="148" cy="450" r="8" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <rect x="146" y="440" width="4" height="10" rx="2" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <line x1="145" y1="454" x2="151" y2="454" stroke="#fff" stroke-width="1.2"/>
+  <text x="166" y="455" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#fff">Start Recording</text>
+
+  <!-- Upload Audio File Button -->
+  <rect x="40" y="488" width="318" height="52" rx="16" fill="#fff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="195" y="519" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#333" text-anchor="middle">Upload Audio File</text>
+
+  <!-- Re-transcribe Button -->
+  <rect x="40" y="548" width="318" height="52" rx="16" fill="#fff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="195" y="579" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#333" text-anchor="middle">Re-transcribe Saved Audio</text>
+
+  <!-- Info Card -->
+  <rect x="16" y="590" width="358" height="72" rx="16" fill="#e3f2fd"/>
+  <!-- Info icon -->
+  <circle cx="40" cy="626" r="10" fill="none" stroke="#007AFF" stroke-width="1.5"/>
+  <text x="40" y="631" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#007AFF" text-anchor="middle">i</text>
+  <text x="60" y="618" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0d47a1">Recordings are automatically transcribed,</text>
+  <text x="60" y="636" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0d47a1">summarized, and saved as Word documents.</text>
+  <text x="60" y="654" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0d47a1">Files will be downloaded to your computer.</text>
+</svg>

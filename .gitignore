@@ -1,12 +1,16 @@
 # OS files
 .DS_Store
+.DS_Store?
+._*
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+Icon?
 
 # Editor / IDE
 .vscode/
 .idea/
+.cursor/
 *.swp
 *.swo
 *~
@@ -16,17 +20,28 @@ Desktop.ini
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Dependencies
 node_modules/
 bower_components/
+package-lock.json
 
 # Build output
 dist/
 build/
 .cache/
 .tmp/
+.parcel-cache/
 
 # Environment
 .env
 .env.*
+.env.local
+.env.*.local
+
+# System
+*.bak
+*.orig
+*.tmp

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 740" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F7F7F8"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10A37F"/>
+      <stop offset="100%" stop-color="#0D8F6B"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-2%" y="-1%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="390" height="740" fill="url(#bg)"/>
+
+  <!-- Status Bar -->
+  <text x="24" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#2D2D2D">9:41</text>
+  <rect x="358" y="19" width="20" height="10" rx="2" fill="none" stroke="#2D2D2D" stroke-width="1"/>
+  <rect x="378" y="22" width="2" height="4" rx="1" fill="#2D2D2D"/>
+  <rect x="360" y="21" width="16" height="6" rx="1" fill="#2D2D2D"/>
+
+  <!-- Header -->
+  <text x="16" y="72" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#2D2D2D">Translatory</text>
+  <text x="16" y="94" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#565869">Hello, User</text>
+
+  <!-- Sign Out Button -->
+  <rect x="290" y="60" width="84" height="32" rx="16" fill="#fff" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="322" y="81" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#E74C3C" text-anchor="middle">Sign out</text>
+
+  <!-- Upload Card (GlassmorphismCard) -->
+  <rect x="16" y="118" width="358" height="190" rx="16" fill="rgba(255,255,255,0.9)" stroke="rgba(209,213,219,0.3)" stroke-width="1" filter="url(#cardShadow)"/>
+
+  <!-- Upload Area (dashed border) -->
+  <rect x="32" y="134" width="326" height="158" rx="12" fill="#F7F7F8" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="8 4"/>
+
+  <!-- Upload Icon -->
+  <circle cx="195" cy="190" r="28" fill="#E8F5F0"/>
+  <line x1="195" y1="178" x2="195" y2="202" stroke="#10A37F" stroke-width="2.5" stroke-linecap="round"/>
+  <polyline points="185,188 195,178 205,188" fill="none" stroke="#10A37F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="195" y="236" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#2D2D2D" text-anchor="middle">Upload a Document</text>
+  <text x="195" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8E8EA0" text-anchor="middle">PDF, DOCX, PPTX, or Image (JPG, PNG)</text>
+  <text x="195" y="276" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8E8EA0" text-anchor="middle">Tap to browse or drag and drop</text>
+
+  <!-- Supported Languages Card -->
+  <rect x="16" y="326" width="358" height="280" rx="16" fill="rgba(255,255,255,0.9)" stroke="rgba(209,213,219,0.3)" stroke-width="1" filter="url(#cardShadow)"/>
+
+  <!-- Languages Header -->
+  <circle cx="42" cy="358" r="10" fill="none" stroke="#10A37F" stroke-width="1.2"/>
+  <line x1="38" y1="358" x2="46" y2="358" stroke="#10A37F" stroke-width="0.8"/>
+  <line x1="42" y1="354" x2="42" y2="362" stroke="#10A37F" stroke-width="0.8"/>
+  <ellipse cx="42" cy="358" rx="5" ry="10" fill="none" stroke="#10A37F" stroke-width="0.6"/>
+  <text x="60" y="363" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#2D2D2D">Supported Languages</text>
+
+  <!-- IndicTrans2 Group -->
+  <rect x="32" y="380" width="326" height="90" rx="16" fill="#F7F7F8"/>
+  <text x="48" y="404" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#10A37F">IndicTrans2</text>
+  <text x="48" y="422" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Hindi, Telugu, Tamil, Kannada, Bengali,</text>
+  <text x="48" y="438" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Malayalam, Marathi, Gujarati, Punjabi,</text>
+  <text x="48" y="454" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Urdu</text>
+
+  <!-- Google Translate Group -->
+  <rect x="32" y="480" width="326" height="108" rx="16" fill="#F7F7F8"/>
+  <text x="48" y="504" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#10A37F">Google Translate</text>
+  <text x="48" y="522" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Spanish, French, Portuguese, Chinese,</text>
+  <text x="48" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Korean, Vietnamese, Arabic, Persian</text>
+  <text x="48" y="554" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Japanese, German, Italian, Russian,</text>
+  <text x="48" y="570" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#565869">Thai, Indonesian &amp; 100+ more</text>
+</svg>
